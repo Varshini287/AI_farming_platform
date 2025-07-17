@@ -1,0 +1,32 @@
+{# templates/chat.html #}
+{% extends 'base.html' %}
+{% block title %}Farming Chatbot 🤖{% endblock %}
+
+{% block content %}
+<section class="hero"
+     style="background-image: url('{{ url_for('static', filename='images/bg1.jpg') }}');
+            background-size: cover;
+            padding: 4rem 1rem;">
+
+  <div class="chat-panel">
+    <div class="chat-logo">
+      <img src="{{ url_for('static', filename='images/icon_chat.jpg') }}"
+           alt="AI Farming Logo" />
+    </div>
+
+    <h1>Farming Chatbot 🤖</h1>
+
+    <div id="chat-log" class="chat-log"></div>
+
+    <div class="chat-input-area">
+      <input id="chat-input" type="text" placeholder="Ask me anything..." />
+      <button id="chat-send-btn">Send</button>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}

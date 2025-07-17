@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Services – AI Farming{% endblock %}
+{% block content %}
+<section class="hero"
+         style="background-image:url('{{ url_for('static', filename='images/bg1.jpg') }}')">
+  <h1>Our Services</h1>
+  <div class="services-grid">
+    <a href="{{ url_for('crop_page') }}" class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_crop.jpg') }}" alt="Crop">
+      <span>Crop Rec.</span>
+    </a>
+    <a href="{{ url_for('fert_page') }}" class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_fert.jpg') }}" alt="Fertilizer">
+      <span>Fertilizer Rec.</span>
+    </a>
+    <a href="{{ url_for('disease_page') }}" class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_disease.jpg') }}" alt="Disease">
+      <span>Disease Detection</span>
+    </a>
+    <a href="{{ url_for('market_page') }}" class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_market.jpg') }}" alt="Market">
+      <span>Market Analysis</span>
+    </a>
+  </div>
+</section>
+{% endblock %}

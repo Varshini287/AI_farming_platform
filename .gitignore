@@ -1,0 +1,17 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore Jupyter checkpoints
+*.ipynb_checkpoints/
+
+# Ignore IDE settings
+.vscode/
+
+# Ignore large datasets/images
+*.jpg
+*.jpeg
+*.png
+
+# Ignore this full dataset folder if it's huge
+data/Plant_leaves_dataset/

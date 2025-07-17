@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Disease Detection{% endblock %}
+{% block content %}
+<section class="hero"
+         style="background-image:url('{{ url_for('static', filename='images/bg1.jpg') }}')">
+  <h2>Disease Detection</h2>
+  <form id="disease-form" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required>
+    <button type="submit">Detect Disease</button>
+  </form>
+  <p id="disease-result" class="result"></p>
+</section>
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{
+  "Temparature": 0,
+  "Humidity": 0,
+  "Moisture": 0,
+  "Nitrogen": 0,
+  "Potassium": 0,
+  "Phosphorous": 0,
+  "Soil Type_Clayey": 0,
+  "Soil Type_Loamy": 0,
+  "Soil Type_Red": 0,
+  "Soil Type_Sandy": 0,
+  "Crop Type_Cotton": 0,
+  "Crop Type_Ground Nuts": 0,
+  "Crop Type_Maize": 0,
+  "Crop Type_Millets": 0,
+  "Crop Type_Oil seeds": 0,
+  "Crop Type_Paddy": 0,
+  "Crop Type_Pulses": 0,
+  "Crop Type_Sugarcane": 0,
+  "Crop Type_Tobacco": 0,
+  "Crop Type_Wheat": 0
+}
