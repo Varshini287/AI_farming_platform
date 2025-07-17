@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Market Analysis{% endblock %}
+{% block content %}
+<section class="hero"
+         style="background-image:url('{{ url_for('static', filename='images/bg1.jpg') }}')">
+  <h2>Market Price Dashboard</h2>
+  <iframe src="http://localhost:8501"
+          width="100%" height="800"
+          style="border:none;">
+  </iframe>
+</section>
+{% endblock %}

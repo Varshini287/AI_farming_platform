@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}AI Farming{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+   
+      <span class="site-title">AI Farming</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+      <li><a href="{{ url_for('services') }}">Services</a></li>
+      <li><a href="{{ url_for('chat_page') }}">Chatbot</a></li>
+      <li class="login-link"><a href="{{ url_for('login') }}">Login/Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Content -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer (optional) -->
+  <footer>
+    <p>&copy; 2025 AI Powered Farming Platform. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  {% block scripts %}
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  {% endblock %}
+</body>
+</html>

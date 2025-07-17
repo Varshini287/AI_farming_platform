@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Fertilizer Recommendation{% endblock %}
+{% block content %}
+<section class="hero" style="background-image:url('{{ url_for('static', filename='images/bg1.jpg') }}')">
+  <h2>Fertilizer Recommendation</h2>
+  <form id="fert-form">
+    <label>Crop:</label>
+    <select id="fert-crop" name="crop">
+      <option value="wheat">Wheat</option>
+      <option value="rice">Rice</option>
+      <!-- etc -->
+    </select>
+
+    <input name="N"           placeholder="N (Nitrogen)"      required>
+    <input name="P"           placeholder="P (Phosphorous)"  required>
+    <input name="K"           placeholder="K (Potassium)"     required>
+    <input name="temperature" placeholder="Temperature"      required>
+    <input name="humidity"    placeholder="Humidity"         required>
+    <input name="rainfall"    placeholder="Rainfall"         required>
+
+    <button type="submit">Get Fertilizer</button>
+  </form>
+  <p id="fert-result" class="result"></p>
+</section>
+{% endblock %}
