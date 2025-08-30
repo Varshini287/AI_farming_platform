@@ -1,28 +1,27 @@
-# Ignore Python cache and compiled files
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.log
 
-# Ignore Jupyter checkpoints
-*.ipynb_checkpoints/
+# Environments
+.venv/
+venv/
+env/
 
-# Ignore IDE settings
-.vscode/
-
-# Ignore large datasets/images
-*.jpg
-*.jpeg
-*.png
-
-# Ignore this full dataset folder if it's huge
-data/Plant_leaves_dataset/
-# Ignore large data and model files
+# Large files (models, datasets, outputs)
 *.npy
 *.pkl
 *.h5
 *.csv
+*.xlsx
 *.jpg
+*.jpeg
 *.png
+*.mp4
+*.zip
+*.rar
 data/
 models/
-venv/
-__pycache__/
+notebooks/
